@@ -13,7 +13,6 @@
         <title>Output</title>
 </head>
 <body>
-    <h1>Below Is the Output!<h1>
 <?php
 $names = isset($_POST['names']) ? $_POST['names'] : '';
 $password = isset($_POST['password']) ? $_POST['password'] : '';
@@ -26,7 +25,7 @@ $level = isset($_POST['level']) ? $_POST['level'] : '';
 $file = isset($_POST['file']) ? $_POST['file'] : '';
 $textarea = isset($_POST['textarea']) ? $_POST['textarea'] : '';
 $color = isset($_POST['color']) ? $_POST['color'] : '';
-$datetime = isset($_POST['datetime_local']) ? $_POST['datetime_local'] : '';
+$datetime = isset($_POST['datetime-local']) ? $_POST['datetime-local'] : '';
 $month = isset($_POST['month']) ? $_POST['month'] : '';
 $range = isset($_POST['range']) ? $_POST['range'] : '';
 $search = isset($_POST['search']) ? $_POST['search'] : '';
@@ -36,6 +35,7 @@ $time = isset($_POST['time']) ? $_POST['time'] : '';
 $url = isset($_POST['url']) ? $_POST['url'] : '';
 $week = isset($_POST['week']) ? $_POST['week'] : '';
 ?>
+<h2>Personal identification</h2>
 <table border=1 cellspacing=0 height=100 >
 <tr>
 <th>Name</th>
@@ -43,12 +43,6 @@ $week = isset($_POST['week']) ? $_POST['week'] : '';
 <th>Email</th>
 <th>Age</th>
 <th>Date of birth</th>
-<th>Status</th>
-<th>Gender</th>
-<th>Level</th>
-<th>Id file</th>
-<th>Color</th>
-<th>New year date</th>
         </tr>
         <tr>
 <td><?php echo $names; ?></td>
@@ -56,16 +50,27 @@ $week = isset($_POST['week']) ? $_POST['week'] : '';
 <td><?php echo $email; ?></td>
 <td><?php echo $age; ?></td>
 <td><?php echo $date; ?></td>
+        </tr>
+        </table>
+        <h2>Status</h2>
+<table border=1 cellspacing=0>
+    <tr>
+<th>Status</th>
+<th>Gender</th>
+<th>Level</th>
+        </tr>
+        <tr>
 <td><?php echo $status; ?></td>
 <td><?php echo $gender; ?></td>
 <td><?php echo $level; ?></td>
-<td><?php echo $file; ?></td>
-<td><?php echo $color; ?></td>
-<td><?php echo $datetime; ?></td>
         </tr>
         </table>
+        <h2>Survey answers</h2>
         <table border=1 cellspacing=0 height=100>
             <tr>
+<th>Id file</th>
+<th>Color</th>
+<th>New year date</th>
 <th>Holiday time</th>
 <th>Rating</th>
 <th>Search</th>
@@ -77,6 +82,9 @@ $week = isset($_POST['week']) ? $_POST['week'] : '';
 <th>Feedback!</th>
 </tr>
 <tr>
+<td><?php echo $file; ?></td>
+<td><?php echo $color; ?></td>
+<td><?php echo $datetime; ?></td>
 <td><?php echo $month; ?></td>
 <td><?php echo $range; ?></td>
 <td><?php echo $search; ?></td>
