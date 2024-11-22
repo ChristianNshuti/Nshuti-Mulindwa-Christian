@@ -7,15 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="text-align:center;">Sign up</h1>
+    <h1 style="text-align:center;">Simple form</h1>
     <form action="forms.php" method="POST">
         <fieldset>
             <legend>Identification</legend>
         <label>Name:</label><input type="text" name="names"><br><br>
-        <label>Password:</label><input type="password" name="password"><br><br>
-        <label>Email:</label><input type="email" name="email"><br><br>
-        <label>Age:</label><input type="number" min="0" max="100" name="Age"><br><br>
-        <label>Date of birth:</label><input type="date" name="date">
+        <label>Password:</label><input  type="password" name="password"><br><br>
+        <label>Email:</label><input  type="email" name="email"><br><br>
+        <label>Age:</label><input  type="number" min="0" max="100" name="Age"><br><br>
+        <label>Date of birth:</label><input  type="date" name="date">
         </fieldset>
         <fieldset>
             <legend>status</legend>
@@ -23,8 +23,9 @@
         <select name="status">
             <option>Teacher</option>
             <option>Student</option>
-            <option>Principle</option>
+            <option>Website Developer</option>
             <option>Driver</option>
+            <option>Pilot</option>
         </select>
         </fieldset>
         <fieldset>
@@ -34,43 +35,44 @@
         <input type="radio" value="female" name="gender"><label>Female</label><br><br>
 </fieldset>
 <fieldset>
-    <legend>Level</legend>
-    <input type="checkbox" name="level" value="level 3"><label>level 3</label>
-    <input type="checkbox" name="level" value="level 4"><label>level 4</label>
-    <input type="checkbox" name="level" value="level 5"><label>level 5</label>
+    <legend>Level(For students)</legend>
+    <input type="checkbox" name="level" value="level 3"><label>level 3</label><br>
+    <input type="checkbox" name="level" value="level 4"><label>level 4</label><br>
+    <input type="checkbox" name="level" value="level 5"><label>level 5</label><br>
 </fieldset>
 <fieldset>
     <legend>Upload ID</legend>
     <input type="file" name="file">
 </fieldset>
 <fieldset>
+    <legend>Survey questions</legend>
+<h3>What's your favourite color?</h3>
+<input type="color" name="color"><br>
+<h3>When will we celebrate new year and at what time?</h3>
+<input type="datetime-local" name="datetime-local"><br>
+<h3>When do you  go in holidays?</h3>
+<input type="month" name="month"><br>
+<h3>Enter what you love searching over the web</h3>
+<label>Search:</label><input type="search" name="search"><br>
+<h3>Enter your phone number</h3>
+<label>Tel:</label><input type="tel" name="tel"><br>
+<h3>What do you like eating at school?</h3>
+<label>Food:</label><input type="text" name="text"><br>
+<h3>At what time do you wake up?</h3>
+<label>Time:</label><input type="time" name="time"><br>
+<h3>Enter a link to your school website</h3>
+<label>URL:</label><input type="url" name="url"><br>
+<h3>In which week will you have a visit?</h3>
+<label>Week:</label><input type="week" name="week"><br><br>
+</fieldset>
+<fieldset>
     <legend>Feedback</legend>
+    <h3>Rate our page from 0-5</h3>
+    0<input type="range" name="range" min="0" max="5">5<br>
     <h4>Post your feedback below:</h4>
     <textarea placeholder="Your feedback here" name="textarea"></textarea><br>
 </fieldset>
 <fieldset>
-    <legend>Free to answer questions</legend>
-<h3>What's your favourite color?</h3>
-<input type="color" name="color"><br>
-<h3>When do you want to get interviewed?</h3>
-<input type="datetime-local" name="datetime-local"><br>
-<input type="hidden" name="hidden" value="hidden"><br>
-<h3>When do you wish to go in holidays?</h3>
-<input type="month" name="month"><br>
-<h3>From the range of 0-100 pick your rating for our services</h3>
-<input type="range" name="range"><br>
-<h3>What do you wish to search?</h3>
-<label>Search:</label><input type="search" name="search"><br>
-<h3>Enter your phone number</h3>
-<label>Tel:</label><input type="tel" name="tel"><br>
-<h3>Write any text</h3>
-<label>Text:</label><input type="text" name="text"><br>
-<h3>Select Your current time</h3>
-<label>Time:</label><input type="time" name="time"><br>
-<h3>Enter a URL</h3>
-<label>URL:</label><input type="url" name="url"><br>
-<h3>Select your current week!</h3>
-<label>Week:</label><input type="week" name="week"><br><br>
 <input type="submit" value="submit">
 <input type="reset" value="Reset">
 </fieldset>

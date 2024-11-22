@@ -1,3 +1,19 @@
+
+<html>
+    <head>
+        <style>
+            body {
+                font-family:sans-serif;
+                background-color:white;
+            }
+           table {
+            margin-top:15px;
+           }
+            </style>
+        <title>Output</title>
+</head>
+<body>
+    <h1>Below Is the Output!<h1>
 <?php
 $names=$_POST['names'];
 $password=$_POST['password'];
@@ -11,7 +27,6 @@ $file=$_POST['file'];
 $textarea=$_POST['textarea'];
 $color=$_POST['color'];
 $datetime=$_POST['datetime-local'];
-$hidden=$_POST['hidden'];
 $month=$_POST['month'];
 $range=$_POST['range'];
 $search=$_POST['search'];
@@ -20,46 +35,60 @@ $text=$_POST['text'];
 $time=$_POST['time'];
 $url=$_POST['url'];
 $week=$_POST['week'];
-echo "Your names are $names";
-echo "<br/>";
-echo "your password is $password ";
-echo "<br/>";
-echo "your email is  $email ";
-echo "<br/>";
-echo "your age is $age "; 
-echo "<br/>";
-echo "your date of birth is $date ";
-echo "<br/>";
-echo "Your status is $status ";
-echo "<br/>";
-echo "Your gender is $gender ";
-echo "<br/>";
-echo "You are in $level ";
-echo "<br/>";
-echo "You have uploaded $file ";
-echo "<br/>";
-echo "You said $textarea as a feedback ";
-echo "<br/>";
-echo "You preferer this colour $color ";
-echo "<br/>";
-echo "You wish to get interviewed on $datetime ";
-echo "<br/>";
- echo "$hidden"; 
- echo "<br/>";
- echo "You wish to have holidays on $month ";
- echo "<br/>";
- echo "You rated $range to our website ";
- echo "<br/>";
- echo "You entered $search in the search bar ";
- echo "<br/>";
- echo " $tel this is your phone number ";
- echo "<br/>";
- echo " $text ";
- echo "<br/>";
- echo "You current time is $time ";
- echo "<br/>";
- echo "You entered $url as a URL";
- echo "<br/>";
- echo "Your starting week is $week ";
- echo "<br/>";
 ?>
+<table border=1 cellspacing=0 height=100 >
+<tr>
+<th>Name</th>
+<th>Password</th>
+<th>Email</th>
+<th>Age</th>
+<th>Date of birth</th>
+<th>Status</th>
+<th>Gender</th>
+<th>Level</th>
+<th>Id file</th>
+<th>Color</th>
+<th>New year date</th>
+        </tr>
+        <tr>
+<td><?php echo $names; ?></td>
+<td><?php echo $password; ?></td>
+<td><?php echo $email; ?></td>
+<td><?php echo $age; ?></td>
+<td><?php echo $date; ?></td>
+<td><?php echo $status; ?></td>
+<td><?php echo $gender; ?></td>
+<td><?php echo $level; ?></td>
+<td><?php echo $file; ?></td>
+<td><?php echo $color; ?></td>
+<td><?php echo $datetime; ?></td>
+        </tr>
+        </table>
+        <table border=1 cellspacing=0 height=100>
+            <tr>
+
+<th>Holiday time</th>
+<th>Rating</th>
+<th>Search</th>
+<th>Tel</th>
+<th>Food</th>
+<th>Wake up time</th>
+<th>Link to school website</th>
+<th>Week</th>
+<th>Feedback!</th>
+</tr>
+<tr>
+
+<td><?php echo $month; ?></td>
+<td><?php echo $range; ?></td>
+<td><?php echo $search; ?></td>
+<td><?php echo $tel; ?></td>
+<td><?php echo $text; ?></td>
+<td><?php echo $time; ?></td>
+<td><?php echo $url; ?></td>
+<td><?php echo $week; ?></td>
+<td><?php echo $textarea; ?></td>
+</tr>
+</table>
+</body>
+</html>
