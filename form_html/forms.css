@@ -1,0 +1,64 @@
+body {
+background-color:rgb(110, 110, 110);
+text-align:center;
+}
+legend {
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+    font-family:sans-serif;
+}
+form {
+    font-family:arial;
+    color:rgba(0,0,0,1);
+}
+input{
+  border-color:rgba(0,0,0,0.8);
+  border-radius:8px;
+  height:20px;
+  margin-left:9px;
+}
+h1 {
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+fieldset {
+    border-radius:12px;
+    border-color:black;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+input[type=submit] {
+    width:70px;
+    height:40px;
+    border-radius:8px;
+    border-color:rgba(0,0,0,0.7);
+    font-weight:bold;
+}
+input[type=reset] {
+    width:70px;
+    height:40px;
+    border-radius:8px;
+    border-color:rgba(0,0,0,0.7);
+    font-weight:bold;
+}
+input[type=reset]:hover {
+    background-color:rgba(0,0,0,0.5);
+    color:rgba(255,255,255,1);
+    font-weight:bold;
+    border-color:rgba(0,0,0,0.5);
+}
+input[type=submit]:hover {
+    background-color:rgba(0,0,0,0.5);
+    color:rgba(255,255,255,1);
+    font-weight:bold;
+    border-color:rgba(0,0,0,0.5);
+}
+h3,h4 {
+    color:rgba(0,0,0,0.8);
+}
+label {
+    font-weight:bold;
+    color:rgba(0,0,0,0.6);
+}
