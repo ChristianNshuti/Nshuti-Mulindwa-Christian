@@ -15,26 +15,26 @@
 <body>
     <h1>Below Is the Output!<h1>
 <?php
-$names=$_POST['names'];
-$password=$_POST['password'];
-$email=$_POST['email'];
-$age=$_POST['Age'];
-$date=$_POST['date'];
-$status=$_POST['status'];
-$gender=$_POST['gender'];
-$level=$_POST['level'];
-$file=$_POST['file'];
-$textarea=$_POST['textarea'];
-$color=$_POST['color'];
-$datetime=$_POST['datetime-local'];
-$month=$_POST['month'];
-$range=$_POST['range'];
-$search=$_POST['search'];
-$tel=$_POST['tel'];
-$text=$_POST['text'];
-$time=$_POST['time'];
-$url=$_POST['url'];
-$week=$_POST['week'];
+$names = isset($_POST['names']) ? $_POST['names'] : '';
+$password = isset($_POST['password']) ? $_POST['password'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+$age = isset($_POST['Age']) ? $_POST['Age'] : '';
+$date = isset($_POST['date']) ? $_POST['date'] : '';
+$status = isset($_POST['status']) ? $_POST['status'] : '';
+$gender = isset($_POST['gender']) ? $_POST['gender'] : '';
+$level = isset($_POST['level']) ? $_POST['level'] : '';
+$file = isset($_POST['file']) ? $_POST['file'] : '';
+$textarea = isset($_POST['textarea']) ? $_POST['textarea'] : '';
+$color = isset($_POST['color']) ? $_POST['color'] : '';
+$datetime = isset($_POST['datetime_local']) ? $_POST['datetime_local'] : '';
+$month = isset($_POST['month']) ? $_POST['month'] : '';
+$range = isset($_POST['range']) ? $_POST['range'] : '';
+$search = isset($_POST['search']) ? $_POST['search'] : '';
+$tel = isset($_POST['tel']) ? $_POST['tel'] : '';
+$text = isset($_POST['text']) ? $_POST['text'] : '';
+$time = isset($_POST['time']) ? $_POST['time'] : '';
+$url = isset($_POST['url']) ? $_POST['url'] : '';
+$week = isset($_POST['week']) ? $_POST['week'] : '';
 ?>
 <table border=1 cellspacing=0 height=100 >
 <tr>
@@ -66,7 +66,6 @@ $week=$_POST['week'];
         </table>
         <table border=1 cellspacing=0 height=100>
             <tr>
-
 <th>Holiday time</th>
 <th>Rating</th>
 <th>Search</th>
@@ -78,7 +77,6 @@ $week=$_POST['week'];
 <th>Feedback!</th>
 </tr>
 <tr>
-
 <td><?php echo $month; ?></td>
 <td><?php echo $range; ?></td>
 <td><?php echo $search; ?></td>
